@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Know your Language Proficiency</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <img
+        src="https://live.staticflickr.com/65535/51262624119_07fb913283_z.jpg"
+        alt="Logo 1"
+        class="logo"
+      />
+      <h1>Quickly Determine your proficiency level!</h1>
+      <p>
+        This app will help you determine your language proficiency based on the
+        Interagency Language Roundtable(ILR) Scale.
+      </p>
+    </div>
+
+    <div class="quiz-container">
+      <h1>Answer questions for a better understanding of your level.</h1>
+      <div id="question-container">
+        <p id="question">
+          Question 1: Can you produce any spoken words in the language?
+        </p>
+        <div id="answer-container">
+          <label> <input type="radio" name="answer" value="0" /> No </label>
+          <label>
+            <input type="radio" name="answer" value="1" /> Yes, a little
+          </label>
+          <label>
+            <input type="radio" name="answer" value="2" /> Yes, confidently
+          </label>
+        </div>
+      </div>
+
+      <!-- Additional questions go here -->
+
+      <button onclick="nextQuestion()">Next</button>
+      <div id="result-container"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
